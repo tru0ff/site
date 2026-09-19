@@ -1,0 +1,131 @@
+/* ===== Базовые настройки ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  line-height: 1.7;
+  color: #2c3e50;
+  background: #f4f7f6;
+  padding: 20px;
+}
+
+/* ===== Контейнер ===== */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 14px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+}
+
+/* ===== Заголовки ===== */
+h1 {
+  font-size: 2.6rem;
+  color: #1e3c72;
+  border-bottom: 3px solid #3498db;
+  padding-bottom: 12px;
+  margin-bottom: 25px;
+}
+
+h2 {
+  font-size: 1.7rem;
+  color: #2a5298;
+  margin: 35px 0 15px;
+  border-left: 5px solid #3498db;
+  padding-left: 12px;
+}
+
+/* ===== Текст ===== */
+p {
+  margin-bottom: 16px;
+  text-align: justify;
+}
+
+.intro {
+  font-size: 1.15rem;
+  color: #34495e;
+}
+
+.population {
+  font-weight: 600;
+  color: #2980b9;
+  margin-bottom: 25px;
+}
+
+/* ===== Картинки ===== */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+  margin: 10px 0;
+}
+
+figure {
+  margin: 25px 0;
+  text-align: center;
+}
+
+figcaption {
+  font-size: 0.9rem;
+  color: #7f8c8d;
+  margin-top: 8px;
+  font-style: italic;
+}
+
+/* ===== Герб и флаг ===== */
+.emblems {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin: 30px 0;
+  flex-wrap: wrap;
+}
+
+.emblems img {
+  width: 120px;
+  margin: 0;
+}
+
+/* ===== Список ===== */
+.facts {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.facts li {
+  background: #eaf2f8;
+  margin-bottom: 10px;
+  padding: 14px 18px;
+  border-left: 5px solid #3498db;
+  border-radius: 6px;
+}
+
+/* ===== Адаптивность ===== */
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  .container {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 1.9rem;
+  }
+
+  h2 {
+    font-size: 1.35rem;
+  }
+
+  .emblems img {
+    width: 90px;
+  }
+}
